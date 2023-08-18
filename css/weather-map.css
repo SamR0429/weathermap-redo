@@ -1,0 +1,42 @@
+img{
+    height: 2rem;
+}
+.navbar{
+    font-family: 'Montserrat' , sans-serif;
+    font-size: 1rem;
+
+}
+body{
+    font-family: 'Montserrat' , sans-serif;
+}
+
+.sam-card{
+    font-family: 'Montserrat' , sans-serif;
+    list-style: none;
+    background-color: white;
+    border-color: black;
+    width:50rem;
+    margin-left: 20.5rem;
+    border-radius: .5rem;
+
+}
+.date{
+    background-color: black;
+    color:#D9D6D6;
+}
+#map{
+    margin-left: 10.5rem;
+}
+.page-wrapper{
+    background-color: rgba(199, 193, 193, 0.66);
+}
+.min-temp{
+    color: #377DC2;
+}
+.max-temp{
+    color: #E4763B
+}
+.search-bar{
+    width: 40rem;
+    margin-left: 25rem;
+}
