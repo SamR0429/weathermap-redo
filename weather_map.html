@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
           rel="stylesheet">
 
+
 </head>
 <body>
 <!-- navbar -->
@@ -49,56 +50,67 @@
         <div class="row">
             <div class="column">
 
+                <!-- searchbar-->
                 <form class="search-bar me-3 mt-3" role="search" id="search-bar">
-                    <input id="search-input" type="search" class="form-control" placeholder="Search city..." aria-label="Search">
+                    <input id="search-input" type="search" class="form-control" placeholder="Search city..."
+                           aria-label="Search">
                 </form>
 
-                <div class='d-flex flex-container mt-3 mb-3' id="map" style="height:40rem; width: 70rem ;"></div>
 
-                <div class="card-container d-flex flex-row" style="width: 18rem;">
-                    <div class="card-body">
-                        <div id="insertWeather">
+                <!--cards are here-->
+                <div class="card-container " style="width: 18rem;">
+                    <div class="card-body ">
+                        <div id="insertWeather" class=" d-flex flex-row justify-content-center align-items-center">
+
 
                         </div>
                     </div>
                 </div>
 
+
+
+                <!--the actual map-->
+                <div class='d-flex flex-container mt-3 mb-3' id="map" style="height:25rem; width: 60rem ;"></div>
+
+
             </div>
         </div>
     </div>
 </div>
+
+
 <!-- end of main content -->
 <!-- this is the footer -->
-<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    <div class="col-md-4 d-flex align-items-center">
-        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-            <svg class="bi" width="30" height="24">
-                <use xlink:href="#bootstrap"/>
-            </svg>
-        </a>
-        <span class="mb-3 mb-md-0 text-body-secondary">&copy; The Weather Map, Inc</span>
-    </div>
-    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-body-secondary" href="#">
-            <img src="img/twitterlogo.png">
-            <svg class="bi" width="24" height="24">
-                <use xlink:href="#twitter"/>
-            </svg>
-        </a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="#">
-            <img src="img/instaGram.jpg">
-            <svg class="bi" width="24" height="24">
-                <use xlink:href="#instagram"/>
-            </svg>
-        </a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="#">
-            <svg class="bi" width="24" height="24">
-                <img src="img/facebook.jpg">
-                <use xlink:href="#facebook"/>
-            </svg>
-        </a></li>
-    </ul>
-</footer>
+<!--<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">-->
+<!--    <div class="col-md-4 d-flex align-items-center">-->
+<!--        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">-->
+<!--            <svg class="bi" width="30" height="24">-->
+<!--                <use xlink:href="#bootstrap"/>-->
+<!--            </svg>-->
+<!--        </a>-->
+<!--        <span class="mb-3 mb-md-0 text-body-secondary">&copy; The Weather Map, Inc</span>-->
+<!--    </div>-->
+<!--    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">-->
+<!--        <li class="ms-3"><a class="text-body-secondary" href="#">-->
+<!--            <img src="img/twitterlogo.png">-->
+<!--            <svg class="bi" width="24" height="24">-->
+<!--                <use xlink:href="#twitter"/>-->
+<!--            </svg>-->
+<!--        </a></li>-->
+<!--        <li class="ms-3"><a class="text-body-secondary" href="#">-->
+<!--            <img src="img/instaGram.jpg">-->
+<!--            <svg class="bi" width="24" height="24">-->
+<!--                <use xlink:href="#instagram"/>-->
+<!--            </svg>-->
+<!--        </a></li>-->
+<!--        <li class="ms-3"><a class="text-body-secondary" href="#">-->
+<!--            <svg class="bi" width="24" height="24">-->
+<!--                <img src="img/facebook.jpg">-->
+<!--                <use xlink:href="#facebook"/>-->
+<!--            </svg>-->
+<!--        </a></li>-->
+<!--    </ul>-->
+<!--</footer>-->
 
 <script src='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js'></script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"
