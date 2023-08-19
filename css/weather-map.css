@@ -49,7 +49,8 @@ body {
     /*margin-left: 20.5rem;*/
     border-radius: 2rem;
     height: 20rem;
-    margin: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
 }
 
 .text{
@@ -61,7 +62,12 @@ body {
     margin-left: 1.5rem;
 }
 
-
+.text-for-cards{
+    margin-left: 2rem;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
 
 /*this is for the light and dark mode */
 
