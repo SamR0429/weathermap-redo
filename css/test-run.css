@@ -1,0 +1,11 @@
+/* Light Theme Styles */
+body[data-bs-theme="light"] {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Dark Theme Styles */
+body[data-bs-theme="dark"] {
+    background-color: #333333;
+    color: #ffffff;
+}
