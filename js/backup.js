@@ -18,3 +18,35 @@
                             <p className="card-text card-details">Card details go here.</p>
                             <p>Additional details can be revealed here.</p>
 
+
+
+
+                            //THIS WORKS BUT YOU NEED TO FIND OUT HOW TO COMBINE THE TWO CAUSE RN THEY ARE WORKING SEPARATELY
+
+
+                            document.getElementById('search-form').addEventListener('submit', async (event) => {
+                            event.preventDefault();
+
+                            const cityInput = document.getElementById('city-input').value;
+                            const apiKey = OPEN_WEATHER_APPID; // Replace with your actual API key
+                            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityInput}&appid=${apiKey}`;
+
+                            try {
+                            const response = await fetch(apiUrl);
+                            const data = await response.json();
+
+                            if (response.ok) {
+                            const weatherInfo = `
+                <h2>Weather in ${data.name}, ${data.sys.country}</h2>
+                <p>Temperature: ${data.main.temp}°C</p>
+                <p>Weather: ${data.weather[0].description}</p>
+            `;
+
+                            document.getElementById('weather-info').innerHTML = weatherInfo;
+                        } else {
+                            document.getElementById('weather-info').innerHTML = 'City not found.';
+                        }
+                        } catch (error) {
+                            console.error('Error fetching data:', error);
+                        }
+                        });
