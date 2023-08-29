@@ -50,7 +50,7 @@ $(() => {
     document.getElementById('search-form').addEventListener('submit', async (event) => {
         event.preventDefault();
 
-        const cityInput = document.getElementById('city-input').value;
+        const cityInput = document.getElementById('search-input').value;
         const apiKey = OPEN_WEATHER_APPID; // Replace with your actual API key
         const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityInput}&appid=${apiKey}`;
 
